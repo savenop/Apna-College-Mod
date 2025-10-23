@@ -1,9 +1,9 @@
-
+import { motion } from "motion/react"
 
 const Image = () => {
   return (
     <div>
-        <img src="https://lwfiles.mycourse.app/62a6cd5e1e9e2fbf212d608d-public/bb53b387fc89cc00aa6219f6865e9158.png" className=" h-[520px] absolute right-45 top-45"/>
+        <img src="https://i.ibb.co/xtyQJgPD/Screenshot-2025-10-23-164721.png" className=" h-[400px] absolute right-40 top-52 border-3 border-orange-400  rounded-2xl"/>
     </div>
   )
 }
