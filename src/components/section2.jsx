@@ -1,9 +1,12 @@
 import React from 'react'
 import Card from './card'
+import Crazy from './crazy'
+import Look from './look'
 
 const section2 = () => {
   return (
-    <div className="h-screen w-screen mt-40 flex justify-between px-40">
+    <div>
+    <div className="h-auto w-screen mt-40 flex justify-between px-40">
         <Card
             svg={
                 <svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#FF8904">
@@ -28,6 +31,9 @@ const section2 = () => {
             head="Seamless Streaming"
             des="Watch all content smoothly in high resolution on a reliable player. Study without interruptions, enjoy clear audio and video, and focus entirely on learning. no ads, no lag, just pure course content."
         />
+    </div>
+    <Look />
+    < Crazy />
     </div>
   )
 }
