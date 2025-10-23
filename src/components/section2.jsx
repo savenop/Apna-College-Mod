@@ -32,7 +32,6 @@ const section2 = () => {
             des="Watch all content smoothly in high resolution on a reliable player. Study without interruptions, enjoy clear audio and video, and focus entirely on learning. no ads, no lag, just pure course content."
         />
     </div>
-    <Look />
     < Crazy />
     </div>
   )

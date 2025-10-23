@@ -2,7 +2,7 @@ import Nav from './components/nav'
 import Content from './components/content'
 import Image from './components/image'
 import Section2 from './components/section2'
-import Footor from './components/footor'
+import Footor from './components/Footor'
 
 const App = () => {
   return (

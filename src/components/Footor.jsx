@@ -5,7 +5,7 @@ import React from "react";
 // Minimal Working Example: Footer component using Tailwind CSS
 // Dark themed (you can set body bg to #1E1E1E in your app)
 
-export default function Footor({ brand = "", links = [], small = false }) {
+ function Footor ({ brand = "", links = [], small = false }) {
   return (
     <footer className="w-full bg-black text-gray-300">
       <div className="max-w-[79%] mx-auto px- py-8 sm:py-12">
@@ -71,6 +71,8 @@ export default function Footor({ brand = "", links = [], small = false }) {
     </footer>
   );
 }
+
+export default Footor
 
 /*
 Usage (example):
