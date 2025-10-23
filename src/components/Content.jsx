@@ -1,4 +1,4 @@
-import Btn from './btn'
+import Btn from './Btn'
 import { motion } from "motion/react"
 
 const content = () => {
