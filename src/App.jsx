@@ -1,6 +1,6 @@
 import Nav from './components/Nav'
 import Content from './components/Content'
-import Image from './components/Image'
+import Img from './components/Img'
 import Section2 from './components/Section2'
 import Footor from './components/Footor'
 
@@ -12,7 +12,7 @@ const App = () => {
 
       <Nav />
       <Content />
-      <Image />
+      <Img />
       <Section2 />
       <Footor />
     </div>
