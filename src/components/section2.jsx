@@ -3,7 +3,7 @@ import Card from './Card'
 import Crazy from './Crazy'
 import Look from './Look'
 
-const section2 = () => {
+const Section2 = () => {
   return (
     <div>
     <div className="h-auto w-screen mt-40 flex justify-between px-40">
@@ -37,4 +37,4 @@ const section2 = () => {
   )
 }
 
-export default section2
+export default Section2
