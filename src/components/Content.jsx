@@ -1,8 +1,10 @@
 import Btn from './Btn'
+import No from './No'
 import { motion } from "motion/react"
 
 const content = () => {
   return (
+    <div className="">
     <div className="relative z-10">
         <h1 className="px-40 py-3 mt-20 text-[44px] font-black ">COMPLETE <span className="bg-orange-400 p-1 rounded-2xl">SIGMA 9.0</span><br /> COURSE<br /> <span className="text-3xl"></span></h1>
 
@@ -34,6 +36,10 @@ const content = () => {
         </div>
 
         <Btn />
+    </div>
+
+
+    <No />
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import Nav from './components/Nav'
 import Content from './components/Content'
-import No from './components/No'
 import Section2 from './components/Section2'
 import Footor from './components/Footor'
 
@@ -12,7 +11,6 @@ const App = () => {
 
       <Nav />
       <Content />
-      <No />
       <Section2 />
       <Footor />
     </div>
