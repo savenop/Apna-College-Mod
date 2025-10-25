@@ -1,7 +1,7 @@
 import React from 'react'
-import Card from './Card'
-import Crazy from './Crazy'
-import Look from './Look'
+import Card from './Card.jsx'
+import Crazy from './Crazy.jsx'
+import Look from './Look.jsx'
 
 const Section2 = () => {
   return (

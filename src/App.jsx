@@ -1,7 +1,7 @@
-import Nav from './components/Nav'
-import Content from './components/Content'
-import Section2 from './components/Section2'
-import Footor from './components/Footor'
+import Nav from './components/Nav.jsx'
+import Content from './components/Content.jsx'
+import Section2 from './components/Section2.jsx'
+import Footor from './components/Footor.jsx'
 
 const App = () => {
   return (

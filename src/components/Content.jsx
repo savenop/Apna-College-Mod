@@ -1,5 +1,5 @@
-import Btn from './Btn'
-import Image from './Image'
+import Btn from './Btn.jsx'
+import Image from './Image.jsx'
 
 const content = () => {
   return (
