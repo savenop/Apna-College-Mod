@@ -7,3 +7,19 @@
     --font-pop: "Poppins", sans-serif;
     --font-osw: "Oswald", sans-serif;
 }
+
+body::-webkit-scrollbar {
+  width: 5px; /* thin */
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e1e; /* match your dark theme */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #FF8904; /* yellow shade */
+  border-radius: 30px;
+}
+
+::selection {
+  background-color: #3b3b3b; /* yellow background */
+  color: #ffffff; /* dark text */
+}

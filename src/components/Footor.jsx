@@ -5,48 +5,19 @@ import React from "react";
 // Minimal Working Example: Footer component using Tailwind CSS
 // Dark themed (you can set body bg to #1E1E1E in your app)
 
- function Footor ({ brand = "", links = [], small = false }) {
+ function Footor ({ brand = "v0.0.1", links = [], small = false }) {
   return (
     <footer className="w-full bg-black text-gray-300">
       <div className="max-w-[79%] mx-auto px- py-8 sm:py-12">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-          {/* Brand + short description */}
-          <div className="flex items-start gap-4">
-            
-            <div>
-              <div className="text-white font-semibold text-lg">{brand}</div>
-              <p className="text-sm text-gray-400 max-w-md"></p>
-            </div>
-          </div>
-
-          {/* Links section */}
-          <nav aria-label="footer" className="flex flex-wrap gap-4">
-            {links.length > 0 ? (
-              links.map((ln, i) => (
-                <a
-                  key={i}
-                  href={ln.href}
-                  className="text-sm hover:text-white transition-colors"
-                >
-                  {ln.label}
-                </a>
-              ))
-            ) : (
-              <>
-              </>
-            )}
-          </nav>
-        </div>
-
         <div className="mt- border-t border-gray-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <p className="text-xs text-gray-500">© {new Date().getFullYear()} {brand}. All rights reserved.</p>
+          <p className="text-xs text-gray-500">© {new Date().getFullYear()} {brand}</p>
 
           <div className="flex items-center gap-3">
             {/* simple social icons - accessible buttons */}
+
+
             <a aria-label="Twitter" href="#" className="p-2 rounded hover:bg-gray-800 transition">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-gray-400">
-                <path d="M22 5.92c-.63.28-1.3.48-2 .57.72-.43 1.27-1.11 1.53-1.92-.68.4-1.43.69-2.23.84C18.52 4.4 17.61 4 16.6 4c-1.72 0-3.11 1.39-3.11 3.11 0 .24.03.48.08.7C9.7 7.6 6.13 5.8 3.7 3.03c-.27.47-.43 1.02-.43 1.6 0 1.11.56 2.09 1.42 2.66-.52-.02-1.01-.16-1.44-.4v.04c0 1.5 1.06 2.75 2.47 3.03-.26.07-.54.11-.83.11-.2 0-.39-.02-.58-.06.39 1.22 1.52 2.11 2.86 2.14-1.05.82-2.37 1.31-3.81 1.31-.25 0-.5-.01-.74-.04 1.37.88 3 1.4 4.75 1.4 5.7 0 8.82-4.72 8.82-8.82v-.4c.6-.44 1.12-.98 1.53-1.6-.55.25-1.13.42-1.73.5z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#ced4da"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-75 29-147t81-128.5q52-56.5 125-91T475-881q21 0 43 2t45 7q-9 45 6 85t45 66.5q30 26.5 71.5 36.5t85.5-5q-26 59 7.5 113t99.5 56q1 11 1.5 20.5t.5 20.5q0 82-31.5 154.5t-85.5 127q-54 54.5-127 86T480-80Zm-60-480q25 0 42.5-17.5T480-620q0-25-17.5-42.5T420-680q-25 0-42.5 17.5T360-620q0 25 17.5 42.5T420-560Zm-80 200q25 0 42.5-17.5T400-420q0-25-17.5-42.5T340-480q-25 0-42.5 17.5T280-420q0 25 17.5 42.5T340-360Zm260 40q17 0 28.5-11.5T640-360q0-17-11.5-28.5T600-400q-17 0-28.5 11.5T560-360q0 17 11.5 28.5T600-320ZM480-160q122 0 216.5-84T800-458q-50-22-78.5-60T683-603q-77-11-132-66t-68-132q-80-2-140.5 29t-101 79.5Q201-644 180.5-587T160-480q0 133 93.5 226.5T480-160Zm0-324Z"/></svg>
             </a>
 
             <a aria-label="GitHub" href="#" className="p-2 rounded hover:bg-gray-800 transition">
@@ -60,31 +31,18 @@ import React from "react";
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z" />
               </svg>
             </a>
+
+
           </div>
         </div>
       </div>
 
-      {/* compact mode for tiny screens (optional) */}
+      {/* compact mode for tiny screens (optional)
       {small && (
         <div className="w-full bg-gray-900 text-gray-400 text-center py-2 text-xs">Compact footer — {brand}</div>
-      )}
+      )} */}
     </footer>
   );
 }
 
 export default Footor
-
-/*
-Usage (example):
-
-import Footer from "./Footer";
-
-function App(){
-  return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-1">Your app content</main>
-      <Footer brand="My MWE" links={[{label:'Docs', href:'#'},{label:'Contact', href:'#'}]} />
-    </div>
-  )
-}
-*/
