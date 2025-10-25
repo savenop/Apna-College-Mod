@@ -3,7 +3,7 @@ import Card from './Card.jsx'
 import Crazy from './Crazy.jsx'
 import Look from './Look.jsx'
 
-const Section2 = () => {
+const Sectiontwo = () => {
   return (
     <div>
     <div className="h-auto w-screen mt-40 flex justify-between px-40">
@@ -38,4 +38,4 @@ const Section2 = () => {
   )
 }
 
-export default Section2
+export default Sectiontwo

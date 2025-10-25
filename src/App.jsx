@@ -1,6 +1,6 @@
 import Nav from './components/Nav.jsx'
 import Content from './components/Content.jsx'
-import Section2 from './components/Section2.jsx'
+import Sectiontwo from './components/Sectiontwo.jsx'
 import Footor from './components/Footor.jsx'
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
 
       <Nav />
       <Content />
-      <Section2 />
+      <Sectiontwo />
       <Footor />
     </div>
   )
