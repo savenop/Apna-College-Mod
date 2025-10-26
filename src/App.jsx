@@ -1,7 +1,9 @@
+import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
 import Content from './components/Content.jsx'
 import Sectiontwo from './components/Sectiontwo.jsx'
 import Footor from './components/Footor.jsx'
+import Term from './pages/Term.jsx'
 
 const App = () => {
   return (
@@ -10,9 +12,23 @@ const App = () => {
       <div className="absolute top-100 left-0 w-[400px] h-[400px] bg-orange-400 opacity-20 rounded-full blur-[200px]" />
 
       <Nav />
-      <Content />
-      <Sectiontwo />
-      <Footor />
+
+      <Routes>
+
+        <Route path="/" element={
+            <>
+              <Content />
+              <Sectiontwo />
+              <Footor />
+            </>
+          }
+        />
+        <Route path="/term" element={
+          <Term />
+          } 
+        />
+      </Routes>
+      
     </div>
   )
 }
